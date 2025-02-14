@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+:root {
+  --bg-collor: #222831;
+  --second-bg-collor: #393e46;
+}
+
+body {
+  background: var(--bg-collor);
+}
+.logo {
+  color: white;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 700px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 48px 96px;
+  gap: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: 700px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.line1 {
+  height: 0px;
+  left: 0px;
+  top: 132px;
+  border: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+.line2 {
+  border-top: 1px solid rgba(0, 173, 181, 0.5);
+  margin: 2rem 0;
+}
+.homeheading {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.lefthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 202px;
+  margin-left: 180px;
+  padding: 0px;
+  gap: 48px;
+}
+
+.btnsection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.rounbtn {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  gap: 10px;
+  border-radius: 24px;
+}
+
+.rounbtn-gry {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: #393e46bf;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  gap: 10px;
+  border-radius: 24px;
+  backdrop-filter: blur(2px);
+}
+.dicone {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.men-image {
+  margin-top: 126px;
+  margin-left: 122px;
+  align-self: center; /* Center the image vertically */
+}
+.vector1 {
+  position: absolute;
+  width: 89.96px;
+  height: 221.69px;
+  left: 160.46px;
+  top: 385px;
+  transform: matrix(0.98, 0.15, 0.15, 01.2, -100, 0);
+}
+.down {
+  margin-top: 243px;
+  margin-left: 464px;
+  margin-bottom: 64px;
+  background: rgba(57, 62, 70, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.secondheading {
+  margin-top: 256px;
+  margin-left: 96px;
+  max-width: 332px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+}
+.hstyle {
+}
+.paragraph {
+  margin-left: 96px;
+  max-width: 389px;
+  height: 189px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(238, 238, 238, 0.75);
+}
+.men2 {
+  max-width: 100%;
+  height: auto;
+  margin-top: 230px;
+  margin-left: 179px;
+  margin-bottom: 163px;
+}
+
+.vector2 {
+  position: absolute;
+  width: 61.54px;
+  height: 46.57px;
+  left: 96px;
+  top: 1156px;
+  border: 1.66333px solid rgba(0, 173, 181, 0.5);
+}
+.workpage {
+  background-image: url("Assets/background.png");
+  background-repeat: repeat;
+}
+.rhading {
+  margin-top: 268px;
+  margin-left: 120px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  color: #eeeeee;
+}
+.btn-list {
+  margin-top: 16px;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.cardd {
+  margin-top: 48px;
+  width: 368px; /* Fixed width for desktop */
+  height: 280px;
+  background: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+.card-img {
+  width: 265px; /* Default image width for desktop */
+  height: 158px; /* Default image height for desktop */
+}
+
+.spac {
+  height: 269px;
+}
+.pheding {
+  margin-top: 258px;
+  margin-left: 96px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #eeeeee;
+}
+.pjt-img {
+  margin-left: 317px;
+  margin-top: 0px;
+}
+.sideiput {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 48px;
+  margin-top: 268px;
+}
+
+.nme {
+  border: 1px solid white;
+  width: 288px;
+  height: 59px;
+  background: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: rgba(238, 238, 238, 0.9);
+}
+.nme::placeholder {
+  color: rgba(238, 238, 238, 0.5);
+}
+fnme {
+  color: white;
+}
+.inputgrp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #eeeeee;
+}
+.inpmssg {
+  margin-left: 48px;
+  border: 1px solid white;
+  width: 600px;
+  height: 280px;
+  background: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  padding: 15px;
+  font-size: 18px;
+  color: rgba(238, 238, 238, 0.9);
+}
+.inpmssg::placeholder {
+  color: rgba(238, 238, 238, 0.5);
+}
+.btnspc {
+  margin-left: 48px;
+  margin-top: 24px;
+}
+.line {
+  margin-top: 258px;
+}
+.fmenu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  gap: 48px;
+  color: #eeeeee;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.socl {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 38px;
+  color: #eeeeee;
+}
+.round-icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #393e46;
+  border-radius: 50px;
+}
+.copyright {
+  display: flex;
+  justify-content: end;
+  margin-top: 92px;
+  margin-right: 96px;
+  margin-bottom: 48px;
+  color: rgba(238, 238, 238, 0.75);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.mmargin {
+  margin-left: 48px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* Toggle button styling */
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}

@@ -1,0 +1,379 @@
+/* Center cards on desktop */
+@media (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    gap: 40px; /* Add gap between cards */
+  }
+}
+
+/* Two cards per row from 800px to 1023px */
+@media (min-width: 800px) and (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-between; /* Even space between cards */
+    align-items: center !important; /* Center cards horizontally */
+    padding: 0 20px; /* Add padding on left and right */
+  }
+  .cardd {
+    width: calc(50% - 20px); /* Two cards per row with gap */
+    height: 240px; /* Adjust card height */
+    margin-top: 24px; /* Reduce top margin */
+  }
+  .card-img {
+    width: 90%; /* Adjust image width to be slightly smaller than card */
+    height: 70%; /* Adjust image height based on card height */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+}
+
+/* Two cards per row from 500px to 799px */
+@media (min-width: 500px) and (max-width: 799px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-between; /* Even space between cards */
+    padding: 0 20px; /* Add padding on left and right */
+  }
+  .cardd {
+    width: calc(50% - 20px); /* Two cards per row with gap */
+    height: 200px; /* Adjust card height */
+    margin-top: 24px; /* Reduce top margin */
+  }
+  .card-img {
+    width: 85%; /* Adjust image width to be slightly smaller than card */
+    height: 60%; /* Adjust image height based on card height */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+}
+
+/* Even space between cards up to 500px (stacked vertically) */
+@media (max-width: 499px) {
+  .btn-list {
+    margin-bottom: 24px; /* Add space between buttons and cards */
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 24px; /* Add space between cards */
+  }
+  .cardd {
+    width: 100%; /* Full width for stacked cards */
+    max-width: 300px; /* Limit maximum width */
+    height: 200px; /* Adjust card height */
+    margin-top: 0; /* Remove top margin */
+  }
+  .card-img {
+    width: 85%; /* Adjust image width to be slightly smaller than card */
+    height: 60%; /* Adjust image height based on card height */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+  .btn-list {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+  }
+  .rounbtn,
+  .rounbtn-gry {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    padding: 8px 24px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-list {
+    gap: 8px; /* Reduce gap between buttons for very small screens */
+  }
+  .rounbtn,
+  .rounbtn-gry {
+    font-size: 14px; /* Further reduce font size */
+    padding: 6px 16px; /* Further reduce padding */
+  }
+}
+
+@media (max-width: 1024px) {
+  .mmargin {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .pheding {
+    margin-top: 100px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .pjt-img {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+  .sideiput {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .nme {
+    width: 100%;
+    max-width: 400px;
+  }
+  .inpmssg {
+    margin-left: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+  }
+  .rounbtn {
+    margin-left: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  mmargin {
+    align-items: center;
+  }
+  .line {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pheding {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .inpmssg {
+    height: 150px;
+  }
+  .mmargin {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .mmargin {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .sideiput {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 0;
+    align-items: stretch;
+  }
+  .nme {
+    width: 100% !important;
+    box-sizing: border-box;
+    max-width: 100% !important;
+  }
+  .inpmssg {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0;
+  }
+
+  /* Fix for Message Label Alignment */
+  .inputgrp {
+    margin-left: 48px; /* Match left margin of input fields */
+  }
+}
+
+/* Fix for Message Label and Button Alignment (1024px and above) */
+@media (min-width: 1024px) {
+  .inputgrp {
+    margin-left: 48px; /* Match left margin of input fields */
+  }
+
+  .inpmssg {
+    margin-left: 48px; /* Match left margin of input fields */
+  }
+
+  .rounbtn {
+    margin-left: 96px; /* Match left margin of input fields */
+    width: fit-content; /* Adjust button width to fit content */
+  }
+}
+
+/* New Media Query for Centering the Button */
+@media (min-width: 541px) and (max-width: 1024px) {
+  .rounbtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 1024px) {
+  .vector2 {
+    position: static; /* Reset absolute positioning */
+    margin-bottom: 20px; /* Add spacing */
+    left: auto; /* Reset left positioning */
+    top: auto; /* Reset top positioning */
+  }
+
+  .secondheading {
+    margin-top: 50px; /* Reduce top margin */
+    margin-left: 0; /* Reset left margin */
+    font-size: 48px; /* Smaller font size for tablets */
+    line-height: 1.2; /* Adjust line height */
+    text-align: center; /* Center align heading */
+  }
+
+  .paragraph {
+    margin-left: 0; /* Reset left margin */
+    max-width: 100%; /* Full width for better readability */
+    height: auto; /* Auto height for flexibility */
+    text-align: center; /* Center align text */
+  }
+
+  .men2 {
+    display: block;
+    margin: 0 auto; /* Center align image */
+  }
+
+  .row {
+    flex-direction: row; /* Stack columns vertically */
+    align-items: center; /* Center align items */
+  }
+}
+
+@media (max-width: 768px) {
+  .secondheading {
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+
+  .paragraph {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+}
+/* Responsive Styles for Mobile and Tablet */
+@media (max-width: 991.98px) {
+  .lefthead {
+    margin-top: 50px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .homeheading {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .btnsection {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .men-image {
+    margin-top: 30px;
+    margin-left: 0;
+    max-width: 80%;
+  }
+
+  .vector1 {
+    width: 80px;
+    height: auto;
+    left: 155px;
+    top: 880px;
+    z-index: 1;
+  }
+
+  .down {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    display: block;
+    width: 50px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lefthead {
+    margin-top: 30px;
+  }
+
+  .homeheading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .men-image {
+    margin-top: 20px;
+    max-width: 70%;
+  }
+
+  .vector1 {
+    width: 60px;
+    margin-top: 690px;
+    margin-left: 80px;
+  }
+
+  .down {
+    width: 40px;
+  }
+}
+
+/* Off-canvas styling for mobile and tablets */
+@media (max-width: 991.98px) {
+  .offcanvas {
+    width: 50% !important; /* Always 50% of device width */
+    background-color: #393e46; /* Lighter version of #222831 */
+    color: #fff;
+  }
+  .offcanvas .navbar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+  .offcanvas .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid #555;
+  }
+  .offcanvas .navbar a:hover {
+    background-color: #555;
+  }
+  .offcanvas .logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  /* Hide desktop navigation */
+  .desktop-nav {
+    display: none;
+  }
+}
+/* Desktop styling */
+@media (min-width: 992px) {
+  .offcanvas {
+    display: none !important; /* Hide off-canvas on desktop */
+  }
+  .navbar-toggler {
+    display: none !important; /* Hide toggle button on desktop */
+  }
+  .desktop-nav {
+    display: flex;
+    justify-content: flex-start; /* Align nav items to the left */
+    align-items: center; /* Vertically center nav items */
+  }
+  .desktop-nav a {
+    margin-right: 20px; /* Space between nav items */
+    text-decoration: none;
+    color: #000;
+  }
+}
